@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "env": "npx dotenv -e .env",
     "start": "node --watch server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seo": "scripts/SEO.sh -- ",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf node_modules && yarn install"
   },
   "keywords": [],
   "author": "Ben Turner <ben@dotjock.com>",
@@ -12,6 +15,19 @@
   "description": "This project makes some base level SEO analysis tools available for use on client websites.",
   "packageManager": "yarn@4.10.3",
   "dependencies": {
-    "express": "^5.1.0"
+    "axios": "^1.12.2",
+    "cheerio": "^1.1.2",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "lighthouse": "^13.0.0",
+    "node-crawler": "^0.0.0",
+    "node-fetch": "2",
+    "react": "19.2"
+  },
+  "bin": {
+    "seo-analyze": "./cli.js"
+  },
+  "devDependencies": {
+    "native-deep-extend": "^0.0.4"
   }
 }
