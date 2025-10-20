@@ -1,0 +1,4 @@
+scripts/*.sh            executable
+*.mjs                    text eol=lf
+*.json                   text eol=lf
+

@@ -7,7 +7,8 @@
     "start": "node --watch server.js",
     "seo": "scripts/SEO.sh -- ",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf node_modules && yarn install"
+    "clean": "rm -rf node_modules && yarn install",
+    "pdf-report": "pandoc $(ls -1td reports/*/ | head -1)customer-seo-report.md -o $(ls -1td reports/*/ | head -1)customer-seo-report.pdf"
   },
   "keywords": [],
   "author": "Ben Turner <ben@dotjock.com>",
@@ -18,16 +19,22 @@
     "axios": "^1.12.2",
     "cheerio": "^1.1.2",
     "dotenv": "^17.2.3",
+    "eslint": "^9.38.0",
     "express": "^5.1.0",
+    "g": "^2.0.1",
     "lighthouse": "^13.0.0",
-    "node-crawler": "^0.0.0",
-    "node-fetch": "2",
-    "react": "19.2"
+    "mongoose": "^8.19.1",
+    "node-fetch": "^3.3.2",
+    "pandoc": "^0.2.0",
+    "path": "^0.12.7",
+    "react": "19.2.0",
+    "seo-analyzer": "^3.2.0",
+    "seolint": "^0.14.2",
+    "sitemap": "^8.0.1",
+    "web-vitals": "^5.1.0"
   },
   "bin": {
-    "seo-analyze": "./cli.js"
-  },
-  "devDependencies": {
-    "native-deep-extend": "^0.0.4"
+    "seo-analyze": "./analyzer.mjs",
+    "seo-crawl": "./crawler.mjs"
   }
 }
