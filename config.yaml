@@ -1,0 +1,6 @@
+protocol: "http:"
+startPage: "/help/"
+subPathOnly: true
+saveToCSV: "page-analysis.csv"
+showReport: true
+debug: true
