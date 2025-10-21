@@ -91,10 +91,10 @@ function summarizeDomains(jsonResults, errorFiles, runPath) {
 async function main() {
   const runPath = arg ? path.resolve(arg) : pickLatestRunDir()
   if (!runPath) {
-    console.error('No reports found. Run analyzer first to generate reports under ./reports/')
+    console.error(`No reports found. Run analyzer first to generate reports under ./reports/`)
     process.exit(0)
   }
-  console.log('Using reports directory:', runPath)
+  console.log(`Using reports directory:`, runPath)
 
   const files = fs.readdirSync(runPath)
   const jsonResults = files.filter(f => f.endsWith('.results.json'))
@@ -151,21 +151,21 @@ async function main() {
       i += 1;
     }
   } else {
-    out += 'No actionable tasks found.\n';
-    out += 'Recommendation: Review site for SEO best practices, ensure meta tags, titles, and canonical links are present and valid.\n';
+    out += `No actionable tasks found.\n`;
+    out += `Recommendation: Review site for SEO best practices, ensure meta tags, titles, and canonical links are present and valid.\n`;
   }
   fs.writeFileSync(path.join(runPath, 'project-tasks.txt'), out)
 
   // --- Executive summary for client ---
   let execSummary = ''
-  execSummary += 'SEO Executive Summary\n'
-  execSummary += '====================\n\n'
+  execSummary += `SEO Executive Summary\n`
+  execSummary += `====================\n\n`
   execSummary += `This report was generated on ${plan.generatedAt} as part of a comprehensive SEO review of your web presence.\n\n`
   let customerDomain = plan.analyzedDomains[0] || plan.discoveredRoots[0] || '<your website>';
   if (plan.analyzedDomains.length) {
     execSummary += `Websites analyzed: ${plan.analyzedDomains.join(', ')}\n`
   } else {
-    execSummary += 'No domains could be fully analyzed due to network or site issues.\n'
+    execSummary += `No domains could be fully analyzed due to network or site issues.\n`
   }
   if (plan.discoveredRoots.length) {
     execSummary += `Crawling discovered ${plan.discoveredLinks} unique links from: ${plan.discoveredRoots.join(', ')}\n`
@@ -180,20 +180,20 @@ async function main() {
     }
     if (allTasks.length > 5) execSummary += `...and ${allTasks.length - 5} more.\n`
     execSummary += `\nUpon completing these ${allTasks.length} recommended improvements, Dotjock.com is confident that ${customerDomain} shall increase in its recognition and SEO ratings. We estimate your site will become up to 380% more effective in seeding valuable search engine listings in online catalogs such as Google Search, DMOZ, and advanced industry-specific directories.\n`
-    execSummary += 'Our recommendations are based on industry best practices and tailored analysis of your site. Implementing them will position your business for greater online visibility and measurable growth.\n'
+    execSummary += `Our recommendations are based on industry best practices and tailored analysis of your site. Implementing them will position your business for greater online visibility and measurable growth.\n`
   } else {
-    execSummary += 'No critical SEO issues were automatically detected.\n'
-    execSummary += 'We recommend a manual review for best practices: ensure every page has a unique title, meta description, and canonical link, and that images have descriptive alt attributes.\n'
-    execSummary += '\nDotjock.com is confident that with continued attention to these details, your site will remain competitive and well-positioned for future growth in search engine visibility.\n'
+    execSummary += `No critical SEO issues were automatically detected.\n`
+    execSummary += `We recommend a manual review for best practices: ensure every page has a unique title, meta description, and canonical link, and that images have descriptive alt attributes.\n`
+    execSummary += `\nDotjock.com is confident that with continued attention to these details, your site will remain competitive and well-positioned for future growth in search engine visibility.\n`
   }
-  execSummary += '\nOur process uses automated tools and expert review to ensure your site is discoverable, accessible, and competitive in search rankings.\n'
-  execSummary += 'If you have questions or would like a deeper manual audit, please contact our team.\n'
+  execSummary += `\nOur process uses automated tools and expert review to ensure your site is discoverable, accessible, and competitive in search rankings.\n`
+  execSummary += `If you have questions or would like a deeper manual audit, please contact our team.\n`
   fs.writeFileSync(path.join(runPath, 'executive-summary.txt'), execSummary)
 
   console.log(`Wrote project-plan.json, project-tasks.txt, and executive-summary.txt to ${runPath}`)
 }
 
 main().catch(err => {
-  console.error('Aggregator fatal error:', err && err.message ? err.message : err)
+  console.error(`Aggregator fatal error:`, err && err.message ? err.message : err)
   process.exit(1)
 })
