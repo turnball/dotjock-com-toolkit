@@ -4,3 +4,7 @@ dist
 .DS_Store
 .vscode
 *.log
+.yarn/
+.cache/
+package-lock.json
+reports/

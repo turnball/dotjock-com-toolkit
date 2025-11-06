@@ -1,0 +1,11 @@
+/Users/bturner/_=w=_/_dj/dotjock-com-toolkit/seo/target/debug/deps/pom-3e0fe6eb10a7e92c.d: /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/lib.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/range.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/result.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/set.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/parser.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/char_class.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/utf8.rs
+
+/Users/bturner/_=w=_/_dj/dotjock-com-toolkit/seo/target/debug/deps/libpom-3e0fe6eb10a7e92c.rmeta: /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/lib.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/range.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/result.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/set.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/parser.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/char_class.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/utf8.rs
+
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/lib.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/range.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/result.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/set.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/parser.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/char_class.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pom-3.4.0/src/utf8.rs:

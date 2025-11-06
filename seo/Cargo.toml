@@ -1,0 +1,3 @@
+[workspace]
+members = ["seo-cli"]
+resolver = "2"  # Use edition 2021 resolver

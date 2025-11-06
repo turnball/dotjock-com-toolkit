@@ -1,0 +1,9 @@
+/Users/bturner/_=w=_/_dj/dotjock-com-toolkit/seo/target/release/deps/libencoding_index_simpchinese-845564cf523a11af.rmeta: /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/bturner/_=w=_/_dj/dotjock-com-toolkit/seo/target/release/deps/libencoding_index_simpchinese-845564cf523a11af.rlib: /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/bturner/_=w=_/_dj/dotjock-com-toolkit/seo/target/release/deps/encoding_index_simpchinese-845564cf523a11af.d: /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/lib.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030.rs /Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs
+
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/lib.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030.rs:
+/Users/bturner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/encoding-index-simpchinese-1.20141219.5/gb18030_ranges.rs:
